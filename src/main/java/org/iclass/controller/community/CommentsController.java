@@ -14,10 +14,10 @@ import org.slf4j.LoggerFactory;
 
 public class CommentsController implements Controller {
 	private static final Logger logger = LoggerFactory.getLogger(CommentsController.class);
-	
+	 
 	@Override
 	public void handle(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-//		request.setCharacterEncoding("UTF-8");		//항상 맨앞에. 주석처리는 필터 적용 확인목적
+		request.setCharacterEncoding("UTF-8");		//항상 맨앞에. 주석처리는 필터 적용 확인목적
 		CommunityCommentsDao dao = CommunityCommentsDao.getInstance();
 		String f = request.getParameter("f");
 		String url=null;		//redirect url 변수
@@ -25,6 +25,7 @@ public class CommentsController implements Controller {
 		logger.info("::::::CommentesController  f={} :::::::",f);
 		
 		String page = request.getParameter("page");         // 현재페이지 번호 전달 - 순서9)
+		
 		// 댓글 작성 추가
 		if(f.equals("1")) {
 			CommunityComments vo =CommunityComments.builder()
