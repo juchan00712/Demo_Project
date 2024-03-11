@@ -40,7 +40,7 @@
 			</tr>
 			<tr>
 				<th><label>도서 이미지</label></th>
-				<td><input type="file" name="cover" accept="image/*"   required></td>
+				<td><input type="file" name="cover" accept="image/*" required></td>
 			</tr>
 			
 			<tr>
