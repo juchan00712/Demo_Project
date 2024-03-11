@@ -23,7 +23,7 @@ public class BookCaseSaveController implements Controller {
 		//사용자가 업로드한 파일이 저장될 서버 경로(파일시스템 경로)
 		String path = "D:\\20231228\\upload";
 		// 서버의 로컬 경로에 대해 url 을 지정합니다 -> 톰캣 server.xml
-		// <Context docBase="D:/Class231228/upload" path="/upload"/> 추가하기
+		// <Context docBase="D:\\20231228\\upload" path="/upload"/> 추가하기
 		
 		//업로드 가능한 최대 크기(바이트)
 		int maxSize = 10*1024*1024;		//1024바이트=1KB, 10MByte로 설정

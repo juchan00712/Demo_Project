@@ -45,7 +45,7 @@ public class BookCasePayRequestSuccessController implements Controller {
 						throw new IOException("금액에 문제가 있습니다.");
 		
 		
-		////////////////////
+		
 
         // API 엔드포인트 및 요청 데이터
         String apiUrl = "https://api.tosspayments.com/v1/payments/confirm";
@@ -53,7 +53,7 @@ public class BookCasePayRequestSuccessController implements Controller {
         //amount , orderId도 필요함.
         
         // Authorization 헤더 생성
-        String secretKey = "test_sk_XZYkKL4Mrj1qy0jqAamLV0zJwlEW";
+        String secretKey = "test_sk_d46qopOB89RkQj0EadE73ZmM75y0";
         String authorizationHeader = createAuthorizationHeader(secretKey);
 
         // JSON 데이터 생성
