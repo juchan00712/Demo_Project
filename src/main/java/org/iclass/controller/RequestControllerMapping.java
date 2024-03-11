@@ -38,7 +38,7 @@ public class RequestControllerMapping {
 		mapping.put(new RequestKeyValue("/community/write","GET"), new WriteViewController() );
 		mapping.put(new RequestKeyValue("/community/write","POST"), new WriteController() );
 
-		//게시판 글 상세보기 ,수정하기,삭제하기
+//		//게시판 글 상세보기 ,수정하기,삭제하기
 		mapping.put(new RequestKeyValue("/community/read", "GET"), new ReadController() );
 		mapping.put(new RequestKeyValue("/community/update","GET"), new UpdateViewController() );
 		mapping.put(new RequestKeyValue("/community/update","POST"), new UpdateController() );
@@ -48,13 +48,13 @@ public class RequestControllerMapping {
 		mapping.put(new RequestKeyValue("/join","GET"), new MemberJoinController());
 		mapping.put(new RequestKeyValue("/join","POST"), new MemberSaveController());
 		mapping.put(new RequestKeyValue("/auth/cert/sms","GET"), new AuthCertSMSController());
-		
-		//회원정보수정
+//		
+//		//회원정보수정
 		mapping.put(new RequestKeyValue("/member/modify","GET"),new MemberModifyController());
 		mapping.put(new RequestKeyValue("/api/modify","POST"),new ApiMemberModifyController());
 		mapping.put(new RequestKeyValue("/member/drop","GET"),new MemberDropController());
-		
-		//로그인
+//		
+//		//로그인
 		mapping.put(new RequestKeyValue("/login", "GET"), new LoginViewController());
 		mapping.put(new RequestKeyValue("/login", "POST"), new LoginActionController());
 		mapping.put(new RequestKeyValue("/logout", "GET"), new LogoutController());
