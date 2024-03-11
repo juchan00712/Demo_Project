@@ -129,11 +129,11 @@
 
 			let yn
 			if('${user.userid}'==''){
-<<<<<<< HEAD
+
 				yn=confirm('구매를 원하시면 로그인이 필요합니다. 로그인 하시겠습니까?')
-=======
-				yn=confirm('구매는 로그인이 필요합니다. 로그인 하시겠습니까?')
->>>>>>> branch 'main' of https://github.com/kimsohee-around/DemoProject.git
+
+				
+				// 'main' of https://github.com/kimsohee-around/DemoProject.git
 				/* 로그인 후 글쓰기로 돌아가기 */
 				if(yn) {
 					sessionStorage.setItem('back', 'book/bookcase');
@@ -155,8 +155,8 @@
 			document.querySelector(".modal-body #saleuser").innerHTML = obj.saleuser
 			document.querySelector(".modal-body #title").innerHTML = obj.title
 			document.querySelector(".modal-body #price").innerHTML = Number(obj.price).toLocaleString("ko-KR")
-			modal.show();
 			tossPayInit();		//toss 결제창 만드는 함수.
+			modal.show();
 			}
 		})
 		
