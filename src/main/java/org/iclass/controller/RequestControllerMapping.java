@@ -18,7 +18,6 @@ import org.iclass.controller.member.LoginActionController;
 import org.iclass.controller.member.LoginViewController;
 import org.iclass.controller.member.LogoutController;
 
-
 public class RequestControllerMapping {
 	private static final Map<RequestKeyValue,Controller> mapping = new HashMap<>();
 	
@@ -27,6 +26,7 @@ public class RequestControllerMapping {
 		mapping.put(new RequestKeyValue("/community/list", "GET"), new ListController() );
 		mapping.put(new RequestKeyValue("/community/write","GET"), new WriteViewController() );
 		mapping.put(new RequestKeyValue("/community/write","POST"), new WriteController() );
+
 //		//게시판 글 상세보기 ,수정하기,삭제하기
 		mapping.put(new RequestKeyValue("/community/read", "GET"), new ReadController() );
 		mapping.put(new RequestKeyValue("/community/update","GET"), new UpdateViewController() );
@@ -61,7 +61,7 @@ public class RequestControllerMapping {
 		//추가
 		mapping.put(new RequestKeyValue("/book/form","GET"), new BookCaseFormController());
 		mapping.put(new RequestKeyValue("/book/save","POST"), new BookCaseSaveController());
-
+		
 		//공지사항(검색기능)
 //		mapping.put(new RequestKeyValue("/notice/list", "GET"), new NoticeListController());
 //		mapping.put(new RequestKeyValue("/notice/read", "GET"), new NoticeReadController());
