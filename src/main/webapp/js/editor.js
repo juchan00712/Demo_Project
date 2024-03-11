@@ -70,7 +70,8 @@ function selectLocalImage() {
         const formData = new FormData();
         const file = fileInput.files[0];
         formData.append('uploadFile', file);
-
+		
+		// quills 에디터 안에서 이미지 추가를 클릭했을 때, 이미지를 비동기 통신으로 서버에 업로드합니다.
         $.ajax({
             type: 'post',
             enctype: 'multipart/form-data',
